@@ -1,0 +1,7 @@
+sys-devel/autogen libopts
+sys-devel/gcc ada objc
+# required by app-arch/unar-1.10.8::gentoo
+# required by @libreboot
+# required by @selected
+# required by @world (argument)
+>=gnustep-base/gnustep-make-2.9.3 native-exceptions
