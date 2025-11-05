@@ -1,0 +1,19 @@
+##### modules #####
+# builtin modules
+zmodule environment  # sane env vars
+zmodule input        # sane input keybinds
+zmodule utility      # aliases and color for ls, grep, less
+zmodule fzf          # auto fzf integration, (ctrl+f, **<tab>)
+zmodule termtitle    # better term title
+zmodule mfaerevaag/wd -s wd.plugin.zsh --fpath . # warp dir
+
+##### prompt #####
+zmodule romkatv/powerlevel10k
+
+##### completion #####
+zmodule zsh-users/zsh-completions --fpath src  # additional autocompletes
+zmodule completion
+
+##### last (modules that must be loaded last) #####
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
