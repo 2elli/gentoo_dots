@@ -189,7 +189,7 @@ bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
 
 # menu
-set $menu j4-dmenu-desktop --dmenu='bemenu -H 22 --no-exec \
+set $menu j4-dmenu-desktop --dmenu='bemenu -H 23 --no-exec \
 --af=$purple --nf=$purple \
 --sf=$purple --tf=$purple \
 --hb=$purple --hf=$white -i' \
