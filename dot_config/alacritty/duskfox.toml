@@ -3,7 +3,9 @@
 ## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/duskfox/alacritty.toml
 
 [colors.primary]
-background = "#232136"
+# background = "#232136"
+# foreground = "#e0def4"
+background = "#000000"
 foreground = "#e0def4"
 dim_foreground = "#cdcbe0"
 bright_foreground = "#eae8ff"
