@@ -1,0 +1,41 @@
+[icons]
+icons="awesome6"
+
+[theme.overrides]
+idle_bg = "#00000000"
+idle_fg = "#e0def4"
+good_bg = "#00000000"
+good_fg = "#ffffff"
+warning_bg = "#00000000"
+warning_fg = "#08bdba"
+critical_bg = "#00000000"
+critical_fg = "#ee5396"
+info_bg = "#00000000"
+info_fg = "#ffffff"
+separator_bg = "#00000000"
+separator_fg = "#ffffff"
+
+[[block]]
+block = "scratchpad"
+
+[[block]]
+block = "battery"
+driver = "upower"
+# keep the same format for all states
+format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m)|}"
+full_format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m)|}"
+empty_format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m)|}"
+not_charging_format = " $icon $percentage {$time_remaining.dur(hms:true, min_unit:m)|}"
+
+[[block]]
+block = "cpu"
+format = "$utilization"
+
+[[block]]
+block = "memory"
+format = "$mem_total_used"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%d/%m %r') "
