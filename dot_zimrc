@@ -1,12 +1,11 @@
 ##### modules #####
 # builtin modules
-zmodule environment  # sane env vars
 zmodule input        # sane input keybinds
 zmodule utility      # aliases and color for ls, grep, less
-zmodule fzf          # auto fzf integration, (ctrl+f, **<tab>)
 zmodule termtitle    # better term title
+# other modules
 zmodule mfaerevaag/wd -s wd.plugin.zsh --fpath . # warp dir
-zmodule jeffreytse/zsh-vi-mode # better vi mode
+zmodule jeffreytse/zsh-vi-mode                   # better vi mode
 
 ##### prompt #####
 zmodule romkatv/powerlevel10k
