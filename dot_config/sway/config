@@ -198,9 +198,7 @@ set $menu j4-dmenu-desktop --dmenu='bemenu -H 23 --no-exec \
 bindsym $mod+d exec --no-startup-id $menu
 
 # screenshot
-#bindsym $mod+p exec grimshot save anything
-# Special key to take a screenshot with grim
-#bindsym Print exec grim
+bindsym Print exec grimshot save anything
 
 # audio
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
