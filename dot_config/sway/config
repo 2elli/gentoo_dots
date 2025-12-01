@@ -40,6 +40,10 @@ focus_follows_mouse no
 # mouse+$mod to drag windows
 floating_modifier $mod
 
+# border
+default_border pixel 1
+default_floating_border pixel 1
+
 # drag tiles with mouse
 tiling_drag modifier
 
