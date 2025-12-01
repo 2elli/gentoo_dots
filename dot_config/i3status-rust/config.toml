@@ -29,7 +29,7 @@ not_charging_format = " $icon $percentage {$time_remaining.dur(hms:true, min_uni
 
 [[block]]
 block = "cpu"
-format = "$utilization"
+format = "$utilization$frequency"
 
 [[block]]
 block = "memory"
