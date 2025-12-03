@@ -90,6 +90,18 @@ function clean {
     clear_history
 }
 
+# clear nvim undodir
+function clean_nvim_undodir {
+    NVIMUNDODIR=~/.local/share/nvim/undodir
+    if [[ ! -d "$NVIMUNDODIR" ]]; then
+        echo "$NVIMUNDODIR" does not exist
+        return 1
+    fi
+    echo "deleting undo files older than 3 days"
+    find "$NVIMUNDODIR" -type f -mtime +3 -delete
+}
+
+
 # ------------------
 # Initialize modules
 # ------------------
