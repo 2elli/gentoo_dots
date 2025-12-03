@@ -1,4 +1,8 @@
 ##### modules #####
+# util modules
+zmodule mroth/evalcache
+zmodule romkatv/zsh-defer
+
 # builtin modules
 zmodule input        # sane input keybinds
 zmodule utility      # aliases and color for ls, grep, less
