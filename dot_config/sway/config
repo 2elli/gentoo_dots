@@ -19,15 +19,15 @@ seat seat0 xcursor_theme gentoo-silver 24
 set $white     #ffffff
 set $darkgrey  #323232
 set $grey      #5c5c5c
-set $clear     #00000000
+set $clear     #000000
 set $purple    #c4a7e7
 set $black     #000000
 
 # target                  title   bg      text   indicator  border
-client.focused            $grey   $clear  $grey  $darkgrey  $darkgrey
-client.unfocused          $clear  $clear  $grey  $clear     $black
-client.focused_inactive   $clear  $clear  $grey  $clear     $black
-client.urgent             $clear  $clear  $grey  $clear     $black
+client.focused            $grey   $black  $grey  $darkgrey  $darkgrey
+client.unfocused          $black  $black  $grey  $black     $black
+client.focused_inactive   $black  $black  $grey  $black     $black
+client.urgent             $black  $black  $grey  $black     $black
 ############################################################## appearance
 
 #################### general
