@@ -23,9 +23,6 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 ### zsh config ###
 ##################
 
-# extra completions
-fpath+=~/.zfunc
-
 ##### opts
 setopt EXTENDED_GLOB
 setopt NO_CLOBBER
@@ -43,12 +40,12 @@ unset HISTFILE
 bindkey -v
 bindkey '^Y' autosuggest-accept
 
-##### path
-path+=(~/.local/bin)
-export PATH
-
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
+
+##### path
+path=( ~/.local/bin $path )
+export PATH=$PATH
 
 ##### env vars
 export EDITOR=nvim
@@ -127,9 +124,6 @@ source ${ZIM_HOME}/init.zsh
 # ------------------------------
 # Post-init module configuration
 # ------------------------------
-
-# opam
-zsh-defer _evalcache opam env
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
