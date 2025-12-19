@@ -206,7 +206,8 @@ set $menu j4-dmenu-desktop --dmenu='bemenu -H 23 --no-exec \
 bindsym $mod+d exec $menu
 
 # screenshot
-bindsym Print exec grimshot save anything
+bindsym Print exec grimshot copy anything
+bindsym Shift+Print exec grimshot save anything
 
 # audio
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
