@@ -188,7 +188,10 @@ bindsym $mod+minus scratchpad show
 
 ### exec binds ###
 # term
-bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+Return exec $term
+
+# browser
+bindsym $mod+p exec librewolf
 
 # lock
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
@@ -200,7 +203,7 @@ set $menu j4-dmenu-desktop --dmenu='bemenu -H 23 --no-exec \
 --hb=$purple --hf=$white -i' \
 | xargs -r swaymsg exec --
 
-bindsym $mod+d exec --no-startup-id $menu
+bindsym $mod+d exec $menu
 
 # screenshot
 bindsym Print exec grimshot save anything
@@ -219,8 +222,8 @@ bindsym --locked XF86MonBrightnessDown exec xbacklight -dec 10
 exec gentoo-pipewire-launcher restart &
 exec mako
 exec autotiling-rs
-#############################################################
 
+#############################################################
 
 ############################################################## bar
 bar {
