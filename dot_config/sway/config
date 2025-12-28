@@ -197,11 +197,8 @@ bindsym $mod+p exec librewolf
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
 
 # menu
-set $menu j4-dmenu-desktop --dmenu='bemenu -H 23 --no-exec \
---af=$purple --nf=$purple \
---sf=$purple --tf=$purple \
---hb=$purple --hf=$white -i' \
-| xargs -r swaymsg exec --
+set $menu j4-dmenu-desktop --dmenu='wmenu -i \
+-N 000000 -S c4a7e7 -s 000000' | xargs -r swaymsg exec --
 
 bindsym $mod+d exec $menu
 
