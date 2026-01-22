@@ -191,7 +191,7 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Return exec $term
 
 # browser
-bindsym $mod+p exec librewolf
+bindsym $mod+b exec librewolf
 
 # lock
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
