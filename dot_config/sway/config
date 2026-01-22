@@ -158,8 +158,8 @@ bindsym $mod+Shift+k move up 50px
 bindsym $mod+Shift+l move right 50px
 
 #split h and v
-bindsym $mod+b split h
-bindsym $mod+v split v
+bindsym $mod+comma split h
+bindsym $mod+period split v
  
 #fullscreen
 bindsym $mod+f fullscreen toggle
