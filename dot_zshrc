@@ -44,8 +44,7 @@ bindkey '^Y' autosuggest-accept
 WORDCHARS=${WORDCHARS//[\/]}
 
 ##### path
-path=( ~/.local/bin $path )
-export PATH=$PATH
+typeset -U PATH path
 
 ##### env vars
 export EDITOR=nvim
