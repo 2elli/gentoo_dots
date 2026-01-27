@@ -192,6 +192,7 @@ bindsym $mod+Return exec $term
 
 # browser
 bindsym $mod+b exec librewolf
+bindsym $mod+q exec qutebrowser
 
 # obsidian
 bindsym $mod+o exec gtk-launch obsidian-wayland.desktop
