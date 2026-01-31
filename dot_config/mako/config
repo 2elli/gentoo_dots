@@ -1,3 +1,4 @@
 background-color=#000000
 border-color=#6E56AF
+default-timeout=7000
 history=0
