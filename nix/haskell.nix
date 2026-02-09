@@ -6,5 +6,6 @@ pkgs.mkShell {
         haskellPackages.haskell-language-server
         haskellPackages.hlint
         haskellPackages.fourmolu
+        haskellPackages.stack
     ];
 }
