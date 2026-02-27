@@ -33,7 +33,7 @@ format = "$utilization$frequency"
 
 [[block]]
 block = "memory"
-format = "$mem_total_used"
+format = "$mem_used"
 
 [[block]]
 block = "time"
