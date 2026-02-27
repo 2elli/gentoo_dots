@@ -19,10 +19,27 @@
                     haskellPackages.stack
                 ];
             };
+
+            ai = pkgs.buildEnv {
+                name = "ai";
+                paths = with pkgs; [
+                    opencode
+                ];
+            };
+
+            security = pkgs.buildEnv {
+                name = "security";
+                paths = with pkgs; [
+                    metasploit
+                ];
+            };
+
             default = pkgs.buildEnv {
                 name = "system-packages";
-                paths = [
-                    self.packages."x86_64-linux".haskell
+                paths = with self.packages."x86_64-linux"; [
+                    haskell
+                    ai
+                    security
                 ];
             };
         };
