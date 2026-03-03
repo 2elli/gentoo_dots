@@ -2,7 +2,6 @@
 # builtin modules
 zmodule input        # sane input keybinds
 zmodule utility      # aliases and color for ls, grep, less
-zmodule termtitle    # better term title
 # other modules
 zmodule mfaerevaag/wd -s wd.plugin.zsh --fpath . # warp dir
 zmodule jeffreytse/zsh-vi-mode                   # better vi mode
@@ -11,7 +10,8 @@ zmodule jeffreytse/zsh-vi-mode                   # better vi mode
 zmodule romkatv/powerlevel10k
 
 ##### completion #####
-zmodule zsh-users/zsh-completions --fpath src  # additional autocompletes
+zmodule nix-community/nix-zsh-completions --fpath .
+zmodule zsh-users/zsh-completions --fpath src  # generic completion sources
 zmodule completion
 
 ##### last (modules that must be loaded last) #####
