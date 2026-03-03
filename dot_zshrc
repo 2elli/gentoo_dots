@@ -45,9 +45,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 
 ##### path
 typeset -U PATH path
-path+=( ~/.nix-profile/bin/ )
-path+=( /nix/var/nix/profiles/default/bin/ )
-path+=( ~/.local/bin/ )
+path=( /nix/var/nix/profiles/default/bin ~/.nix-profile/bin ~/.local/bin $path )
 
 ##### env vars
 export EDITOR=nvim
