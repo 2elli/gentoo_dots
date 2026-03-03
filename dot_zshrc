@@ -74,32 +74,11 @@ function clear_history {
     clear
 }
 
-# clear evalcache
-function clear_evalcache {
-    if [[ -n $ZSH_EVALCACHE_DIR ]]; then
-        setopt localoptions rmstarsilent
-        rm -f "$ZSH_EVALCACHE_DIR"/*
-    fi
-}
-
 # clear clipboard and history
 function clean {
-    clear_evalcache
     clear_clip
     clear_history
 }
-
-# clear nvim undodir
-function clean_nvim_undodir {
-    NVIMUNDODIR=~/.local/share/nvim/undodir
-    if [[ ! -d "$NVIMUNDODIR" ]]; then
-        echo "$NVIMUNDODIR" does not exist
-        return 1
-    fi
-    echo "deleting undo files older than 3 days"
-    find "$NVIMUNDODIR" -type f -mtime +3 -delete
-}
-
 
 # ------------------
 # Initialize modules
