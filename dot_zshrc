@@ -53,8 +53,10 @@ export SYSTEM_EDITOR=nvim
 export TERMINAL=alacritty
 
 ##### alias
-alias nvimc='nvim --clean'
-alias tree='lsd --tree'
+alias v="nvim"
+alias vim="nvim"
+alias nvimc="nvim --clean"
+alias tree="lsd --tree"
 alias wlc="wl-copy"
 alias wlp="wl-paste"
 
