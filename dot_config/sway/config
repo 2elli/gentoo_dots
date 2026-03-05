@@ -51,9 +51,9 @@ tiling_drag modifier
 popup_during_fullscreen smart
 ###############################
 
-###################################################### wallpaper
-exec swaybg -i ~/Pictures/wallpapers/gentoo_abducted.png -m fill
-################################################################
+############################################# wallpaper
+exec swaybg -i ~/Pictures/wallpapers/min_bg.png -m fill
+#######################################################
 
 ############################################### workspaces
 set $ws1 "1"
