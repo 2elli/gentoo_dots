@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "morgan";
@@ -22,7 +22,7 @@
     tinymist
     zls
     haskellPackages.haskell-language-server
-    nil
+    nixd
 
     # lint
     typos
@@ -32,9 +32,6 @@
     haskellPackages.fourmolu
     nixfmt
   ];
-
-  # home.file = {
-  # };
 
   gtk = {
     enable = true;
