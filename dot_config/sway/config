@@ -231,6 +231,7 @@ exec autotiling-rs
 
 ############################################################## bar
 bar {
+	font pango:JetBrainsMono Nerd Font Mono 9
 	position bottom
     status_command i3status-rs
 
