@@ -193,6 +193,9 @@ bindsym $mod+Return exec $term
 # browser
 bindsym $mod+b exec librewolf
 
+# bitwarden
+bindsym $mod+Shift+b exec bitwarden
+
 # obsidian
 bindsym $mod+o exec gtk-launch obsidian-wayland.desktop
 
