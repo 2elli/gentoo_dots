@@ -3,7 +3,9 @@
 {
   home.username = "morgan";
   home.homeDirectory = "/home/morgan";
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
+
+  targets.genericLinux.enable = true;
 
   home.packages = with pkgs; [
     ### system packages ###
@@ -36,6 +38,7 @@
   gtk = {
     enable = true;
     colorScheme = "dark";
+    gtk4.theme = null;
   };
 
   programs.home-manager.enable = true;
