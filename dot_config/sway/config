@@ -203,8 +203,7 @@ bindsym $mod+o exec gtk-launch obsidian-wayland.desktop
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
 
 # menu
-set $menu j4-dmenu-desktop --dmenu='wmenu -i \
--N 000000 -S c4a7e7 -s 000000' | xargs -r swaymsg exec --
+set $menu fuzzel
 
 bindsym $mod+d exec $menu
 
