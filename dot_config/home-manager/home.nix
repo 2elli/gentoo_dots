@@ -7,12 +7,18 @@
 
   targets.genericLinux.enable = true;
 
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (pkgs.lib.getName pkg) [
+      "claude-code"
+    ];
+
   home.packages = with pkgs; [
     ### system packages ###
     ghc
     haskellPackages.stack
     metasploit
-    opencode
+    claude-code
     bitwarden-desktop
 
     ### neovim ###
