@@ -51,8 +51,8 @@ tiling_drag modifier
 popup_during_fullscreen smart
 ###############################
 
-############################################# wallpaper
-exec swaybg -i ~/Pictures/wallpapers/min_bg.png -m fill
+############################################# rand wallpaper
+exec ~/.config/sway/random_bg.sh
 #######################################################
 
 ############################################### workspaces
