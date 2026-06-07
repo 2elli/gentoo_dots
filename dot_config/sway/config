@@ -51,10 +51,6 @@ tiling_drag modifier
 popup_during_fullscreen smart
 ###############################
 
-############################################# rand wallpaper
-exec ~/.config/sway/random_bg.sh
-#######################################################
-
 ############################################### workspaces
 set $ws1 "1"
 set $ws2 "2"
