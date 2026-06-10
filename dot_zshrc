@@ -46,6 +46,7 @@ export TERMINAL=alacritty
 
 ##### alias
 alias v="nvim"
+alias v.="nvim ."
 alias vim="nvim"
 alias nvimc="nvim --clean"
 alias tree="lsd --tree"
