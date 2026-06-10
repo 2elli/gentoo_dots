@@ -9,10 +9,13 @@
 
   home.packages = with pkgs; [
     ### system packages ###
-    ghc
-    haskellPackages.stack
+    nh
+    devenv
+
+    # bitwarden-desktop
     metasploit
-    bitwarden-desktop
+
+    haskellPackages.stack
 
     ### neovim ###
     # lsp
@@ -22,16 +25,16 @@
     typescript-language-server
     tinymist
     zls
-    haskellPackages.haskell-language-server
     nixd
+    haskellPackages.haskell-language-server
 
     # lint
     typos
     haskellPackages.hlint
 
     # formatter
-    haskellPackages.fourmolu
     nixfmt
+    haskellPackages.fourmolu
   ];
 
   gtk = {
