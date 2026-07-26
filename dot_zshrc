@@ -73,6 +73,23 @@ function clean {
     clear_history
 }
 
+function uall {
+    # zim
+    zimfw clean
+    zimfw update
+    zimfw upgrade
+    zimfw build
+
+    # nix home manager
+    uhm
+
+    # flatpak
+    flatpak update
+
+    # portage
+    sudo eix-sync
+    sudo emerge -avuDUN @world
+}
 # ------------------
 # Initialize modules
 # ------------------
