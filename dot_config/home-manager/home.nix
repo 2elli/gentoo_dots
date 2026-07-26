@@ -10,12 +10,9 @@
   home.packages = with pkgs; [
     ### system packages ###
     nh
-    devenv
-
-    # bitwarden-desktop
-    metasploit
-
     haskellPackages.stack
+    metasploit
+    bitwarden-desktop
 
     ### neovim ###
     # lsp
