@@ -200,7 +200,6 @@ bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
 
 # menu
 set $menu fuzzel
-
 bindsym $mod+d exec $menu
 
 # screenshot
