@@ -19,6 +19,10 @@ separator_fg = "#ffffff"
 block = "scratchpad"
 
 [[block]]
+block = "net"
+format = " $icon {$signal_strength $ssid |}$device "
+
+[[block]]
 block = "battery"
 driver = "upower"
 # keep the same format for all states
