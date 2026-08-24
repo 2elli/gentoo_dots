@@ -189,11 +189,8 @@ bindsym $mod+Return exec $term
 # browser
 bindsym $mod+b exec librewolf
 
-# bitwarden
-bindsym $mod+Shift+b exec bitwarden
-
 # obsidian
-bindsym $mod+o exec gtk-launch obsidian-wayland.desktop
+bindsym $mod+o exec gtk-launch obsidian.desktop
 
 # lock
 bindsym $mod+Ctrl+l exec swaylock -i ~/Pictures/wallpapers/gentoo_abducted.png
