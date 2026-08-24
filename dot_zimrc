@@ -2,6 +2,7 @@
 # builtin modules
 zmodule input        # sane input keybinds
 zmodule utility      # aliases and color for ls, grep, less
+zmodule fzf          # sets up fzf integration
 # other modules
 zmodule mfaerevaag/wd -s wd.plugin.zsh --fpath . # warp dir
 zmodule jeffreytse/zsh-vi-mode                   # better vi mode
